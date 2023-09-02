@@ -13,7 +13,7 @@ data/*
 !data/.gitkeep
 
 # Ignore virtual environment
-.venv/
+venv/
 
 # Ignore environment files
 .env
