@@ -1,0 +1,19 @@
+# Ignore python install objects
+build/
+*.egg-info
+
+# Ignore notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore caching files
+*.pyc
+
+# Ignore data
+data/*
+!data/.gitkeep
+
+# Ignore virtual environment
+.venv/
+
+# Ignore environment files
+.env
