@@ -10,9 +10,9 @@ from pandas import DataFrame, concat
 
 from py2neo import GraphService, Graph, Subgraph
 
-from explanation_method.decision_method import LegalDecisionMethod
-from explanation_method.knowledge_base import KnowledgeBase, LegalKnowledgeBase, references_to
-from explanation_method.html_csv_import import CSVImporter, RegelElementParser
+from mps_explaineo.decision_method import LegalDecisionMethod
+from mps_explaineo.knowledge_base import KnowledgeBase, LegalKnowledgeBase, references_to
+from mps_explaineo.html_csv_import import CSVImporter, RegelElementParser
 
 @dataclass
 class GlobalExplanation:

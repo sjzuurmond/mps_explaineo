@@ -8,7 +8,7 @@ manipulating and extracting information from the KB.
 from dataclasses import dataclass
 from py2neo import Graph, Subgraph, Node, Relationship
 
-from explanation_method.decision_method import LegalDecisionMethod, DecisionMethod, DecisionModel
+from mps_explaineo.decision_method import LegalDecisionMethod, DecisionMethod, DecisionModel
 
 # relationship classes for in the KB
 class has_child(Relationship): pass
