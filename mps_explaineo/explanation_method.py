@@ -88,8 +88,7 @@ class GlobalExplanation:
         """
         # NOTE: the global explanation graph is made in the same way as the KB
         # this could be done in a more neat / intuitive way (f.e. by extracting only
-        # certain nodes from the kb). I was not able to implement this, but a start
-        # of this type of implementation is saved in '
+        # certain nodes from the kb). I was not able to implement this (yet).
         gb_explanation_kb = LegalKnowledgeBase.from_decision_method(kb.graph.service, kb.decision_method, db_name)       
         gb_explanation = cls(kb.graph.service[db_name], [], gb_explanation_kb)
 
@@ -595,6 +594,7 @@ class LocalExplanation:
 
     Attributes:
     - graph (Graph): The Neo4j graph associated with the local explanation.
+    - models (List[Subgraph]): A list of Subgraph instances representing the models.
     """
     graph: Graph
     models: List[Subgraph]
@@ -614,8 +614,7 @@ class LocalExplanation:
         """
         # NOTE: the local explanation graph is made in the same way as the Global one
         # this could be done in a more neat / intuitive way (f.e. by extracting only
-        # certain nodes from the global expl). I was not able to implement this, but 
-        # a start of this type of implementation is saved in 'unfinished code' 
+        # certain nodes from the global expl). This has yet to be implemented.
         lc_explanation_ge = GlobalExplanation.from_knowledge_base(kb, db_name='local-explanation')       
         lc_explanation = cls(kb.graph.service['local-explanation'], [], lc_explanation_ge)
         lc_explanation.models = lc_explanation.global_explanation.models
@@ -742,7 +741,7 @@ class ExplanationMethod:
         
         # NOTE for now, some additional information is added through
         # a csv import. Ideally, this information is received from the KB
-        # and through a direction connection with the decision method, 
+        # and through a direct connection with the decision method, 
         # but this has yet to be implemented.
         explanation_method.csv_import() 
 
