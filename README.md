@@ -17,6 +17,6 @@
 │   ├── html_csv_import.py          <-- retrieve additional data from html and csv files
 │   └── knowledge_base.py           <-- create knowledge base from imported mps-models
 ├── notebooks                       <-- notebooks for ad-hoc analysis
-│   └── mps_to_graphmodel.ipynb     <-- 
+│   └── explanation_example.ipynb   <-- example of explanation aiding the research
 └── setup.py                        
 ```
