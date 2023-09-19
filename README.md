@@ -10,7 +10,7 @@ MPS_explaineo is a Python package designed to enhance the understanding of rule-
    - The heart of Explaineo, this module is responsible for generating explanations. It takes the content of the MPS models and transforms it into more interpretable graphs that can be questioned and visualised using python notebooks and the Neo4j Bloom application. 
 
 3. **`html_csv_import.py`**
-   - This module is responsible for retrieving additional data from HTML and CSV files, specifically required for the case-study conducted in the associated research [see thesis here].
+   - This module is responsible for retrieving additional data from HTML and CSV files, specifically required for the case-study conducted in the [associated research](https://studenttheses.uu.nl/handle/20.500.12932/44522).
 
 4. **`knowledge_base.py`**
    - This module is essential for creating a knowledge base from the imported MPS models. It establishes the foundational structure and relationships within Neo4j, enabling the explanation generation process to access and organise the information needed for generating explanations.
@@ -24,7 +24,7 @@ MPS_explaineo follows a structured process:
 
 3. `explanation_method.py` takes this organised data and generates explanations. These explanations can be accessed and used through notebooks and Bloom to interpret the decision-making system effectively.
 
-4. Optionally, `html_csv_import.py` can be used to retrieve additional data from external sources, specifically required for the case-study conducted in the associated research. 
+4. Optionally, `html_csv_import.py` can be used to retrieve additional data from external sources, specifically required for the case-study conducted in the [associated research](https://studenttheses.uu.nl/handle/20.500.12932/44522). 
 
 By following this process, mps_explaineo empowers users to gain valuable insights into complex rule-based decision-making systems, making them more transparent and interpretable.
 
