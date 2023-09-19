@@ -1,3 +1,12 @@
+"""
+    This module is responsible for retrieving additional data from HTML and CSV files. Ideally,
+    this data should be retrievable from the decision-making system itself. However, for the case 
+    study (ALEF), additional data is imported for convenience: data on a specific decision (model 
+    instance) is imported separately in csv's as this data is not available within the decision 
+    models (but calculated separately), and data on how to represent rules in text-format is imported 
+    from an HTMLpage to match rule-representations used to export models in an accessible site-format.
+"""
+
 import os
 from bs4 import BeautifulSoup
 from IPython.display import HTML

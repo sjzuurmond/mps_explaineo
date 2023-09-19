@@ -1,6 +1,6 @@
 """
-This module defines classes to represent and manage global and local explanations
-for a given decision method in the context of a legal knowledge base.
+    This module defines classes to represent and manage global and local explanations
+    for a given decision method in the context of a legal knowledge base.
 """
 
 from dataclasses import dataclass

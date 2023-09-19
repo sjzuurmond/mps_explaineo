@@ -1,5 +1,5 @@
 """
-    This code defines a set of data classes and methods for parsing and representing a
+    This module defines a set of data classes and methods for parsing and representing a
     (legal) rule-based and model-driven decision method with models stored in XML files. 
     It includes classes for representing decision properties, references, nodes, models, 
     and methods, as well as methods for parsing XML files and creating instances of 

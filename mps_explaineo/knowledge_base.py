@@ -1,8 +1,8 @@
 """
-This module provides classes and methods for representing a knowledge base (KB)
-using decision models and legal decision methods. The classes define the structure
-and relationships between nodes and subgraphs in the KB and provide methods for
-manipulating and extracting information from the KB.
+    This module provides classes and methods for representing a knowledge base (KB)
+    using decision models and legal decision methods. The classes define the structure
+    and relationships between nodes and subgraphs in the KB and provide methods for
+    manipulating and extracting information from the KB.
 """
 
 from dataclasses import dataclass
